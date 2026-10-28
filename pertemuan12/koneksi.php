@@ -1,0 +1,22 @@
+
+<?php
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "artikel_db";
+
+// Membuat koneksi dengan MySQL
+$connection = mysqli_connect(
+    $dbhost,
+    $dbuser,
+    $dbpass,
+    $dbname
+);
+
+if (!$connection) {
+    die("Tidak dapat terhubung dengan database: "
+        . mysqli_connect_error());
+}
+
+echo "Koneksi database berhasil.";
+?>
